@@ -257,21 +257,8 @@ box-shadow: 0 0.125rem 0.45rem rgba(0, 0, 0, 0.192) !important;
     height:300px;
 }
 @media (max-width:768px){
-  .chat-section{
-    height:100vh;
-  }
   .modal-content{
-    height:100vh;
-  }
-}
-@media (max-width:992px){
-  .chat-section{
-    height:100vh;
-    width:100vw;
-  }
-  .modal{
-    left:0;
-    top:0;
+    height:100%;
   }
 }
 .opacity{
