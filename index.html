@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test préliminaire</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome/fonts/icomoon/style.css">
+	<link rel="icon" href="images/icon.png" type="image/x-icon"/>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm border-bottom fixed-top">
+            <div class="container smooth-scroll">
+                <a class="navbar-brand" href="#home">
+                    <img src="images/icon.png" width="50" alt="">
+                    Stop <span class="text-danger font-weight-normal">Covid</span> 
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-nav collapse navbar-collapse" id="navbarNav" style="font-family:Calibri; font-size:20px;">
+                    <ul class="navbar-nav m-auto flex-center">
+                        <li class="nav-item mr-lg-3 ml-lg-3">
+                            <a class="nav-link" target="outblank" href="www.who.in/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses">OMS</a>
+                        </li>
+
+                        <li class="nav-item mr-lg-3 ml-lg-3">
+                            <a class="nav-link" href="#applications">Applications</a>
+                        </li>
+                        <li class="nav-item mr-lg-3">
+                            <a class="nav-link" href="#symptomes">Symptômes</a>
+                        </li>
+                        <li class="nav-item mr-lg-3">
+                            <a class="nav-link" href="#utilisation">Utilisation</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mL-auto flex-center">
+                        <li class="mr-lg-3">
+                            <a class="btn btn-light shadow-none text-primary" href="">Faire un don</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="home" class="container-fluid" style="background:#f9fafd url('images/bg.png')center">
+        <div class="container" style="padding:140px 0px 100px 0px;">
+            <div class="row m-flex-center">
+                <div class="col-lg-5 col-md-7">
+                    <p>Prenez soins de vous !</p>
+                    <h1 class="blue-dark">Vous pensez avoir été exposé au Coronavirus <span class="text-danger font-weight-bold">Covid-19 </span>et avez des symptômes ?</h1>
+                    <p class="mt-4">Je suis un chat bot, je vous aide à faire un test en me basant sur vos symptômes et vous donne les derniers tweets de l'INRB et OMSRDC.</p>
+                    <div class="mt-5">
+                        <a data-toggle="modal" data-target="#modalRelatedContent" class="btn btn-primary mr-lg-4 text-white"><i class="icon-chat mr-2"></i>Commencer le test</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 ml-auto row m-flex-center">
+                    <div class="col-lg-6 col-6 mt-lg-0 mt-5">
+                        <img src="images/Lavage-mains-FALC.jpg" alt="" class="shadow-lg rounded img-fluid">
+                        <div class="mt-3">
+                            <img src="images/Corona-viurs-FALC.jpg"  alt="" class="shadow-lg rounded img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-6">
+                        <img src="images/Bonjour-FALC.jpg" alt="" class="shadow rounded img-fluid">
+                    </div>
+                    <video src="videos/working-in-office.mp4" autoplay class="d-none embed-responsive"></video>
+                    <div class="row m-flex-center mt-lg-0 mt-5 d-none">
+                        <div class="col-lg-5 col-6">
+                            <div class="shadow-lg illustration bg-white rounded">
+                                <img src="images/Bonjour-FALC.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="shadow-lg illustration bg-white rounded mt-4">
+                                <img src="images/Lavage-mains-FALC.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-6" style="position: sticky; top:70px;">
+                            <div class="shadow-lg illustration bg-white rounded">
+                                <img src="images/Lavage-mains-FALC.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="applications" class="container-fluid" style="background: url('images/service-page.svg')no-repeat top; background-size:600px; margin-top:100px;">
+        <div class="container" style="padding:50px 0px;">
+            <div class="text-center mb-5">
+                <h2>Evolution du virus dans le pays</h2>
+                <p>Ces applications vous donnent des statistiques et informations concernant l'évolution de la pandémie.</p>
+            </div>
+            <div class="col-lg-12 m-auto">
+                <div class="row m-flex-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="shadow-md p-2 bg-white rounded ">
+                            <a href="" class="text-dark row m-flex-center">
+                                <div class="col-4">
+                                    <img src="images/icon.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-8 p-3">
+                                    <h4>DEVS-CAST</h4>
+                                    <p>Statistiques et informations en temps réel de l'évolution du virus dans le monde.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+                        <div class="shadow-md p-2 bg-white rounded ">
+                            <a href="" class="text-dark row m-flex-center">
+                                <div class="col-4">
+                                    <img src="images/icon.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-8 p-3">
+                                    <h4>COVID-19</h4>
+                                    <p>Statistiques et conseils liés au coronavirus. l(application mobile)</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+                        <div class="shadow-md p-2 bg-white rounded ">
+                            <a href="" class="text-dark row m-flex-center">
+                                <div class="col-4">
+                                    <img src="images/icon.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-8 p-3">
+                                    <h4>DRC CV19</h4>
+                                    <p>En swahili et français l'application permet de signaler un cas suspect.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="symptomes" style="padding-top:100px">
+        <h2 class="text-center blue-text-dark">Symptômes à surveiller</h2>
+        <p class="mb-5 text-center">Vous devez régulièrement vous surveillez si vous présentez ces symptômes.</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="shadow-md rounded-tb rounded-top opacity">
+                    <img src="images/banner.jpg" alt="" class="rounded-top img-fluid">
+                    <div class="p-4">
+                        <h4 class="font-weight-lighter">Toux et maux de gorge</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6" style="margin-top:120px;">
+                <div class="shadow-md rounded-tb rounded-top opacity">
+                    <img src="images/banner.jpg" alt="" class="rounded-top img-fluid">
+                    <div class="p-4">
+                        <h4 class="font-weight-lighter">Fièvre</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="shadow-md rounded-tb rounded-top opacity">
+                    <img src="images/banner.jpg" alt="" class="rounded-top img-fluid">
+                    <div class="p-4">
+                        <h4 class="font-weight-lighter">Fatigue inhabituelle</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 pt-5">
+                <div class="shadow-md rounded-tb rounded-top opacity">
+                    <img src="images/banner.jpg" alt="" class="rounded-top img-fluid">
+                    <div class="p-3">
+                        <h4 class="font-weight-lighter">Courbatures</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="">En savoir plus <i class="icon-arrow-right ml-3"></i></a>
+        </div>
+    </div>
+    <div id="utilisation" class="container" style="margin-top:30px; margin-bottom:100px;">
+        <div class="row m-flex-center" style="padding-top:70px;">
+            <div class="col-lg-6 col-md-6 order-lg-1 order-md-1">
+                <h1 class="blue-dark">Je suis trés facile à utiliser, vous chatez juste !</h1>
+                <p class="mt-4">Je vous pose quelques questions concernant votre état de santé en rapport avec les symptômes liés au Coronavirus Covid-19. Et je vous dis ce que j'en pense. </p>
+                <p>Mes compétences en médecine sont assez limitées, si vous avez des doutes, contactez un médecin. je vous fourninais quelques contact.</p>
+                <p>
+                    <span>Cliquez sur ce bouton</span>
+                    <img src="images/button.png" alt="" class="img-fluid">
+                    <span>Situé en bas, à droite de votre écran.</span>
+                </p>
+            </div>
+            <div class="col-lg-5 col-md-6 order-lg-3 order-md-2 ml-auto">
+                <img src="images/chatbot.png" alt="" class="opacity img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light">
+        <div class="container text-center" style="padding:100px 0px;">
+            <h1 class="mb-4 blue-text-dark">Recommandations officielles</h1>
+            <p class="col-lg-9 m-auto">Si vous pensez être malade, évitez les endroits publics. Ne rendez pas visite aux personnes fragiles (personnes âgées ou malades). Evitez de sortir de chez vous. Respectez les mesures barrière (lavage de main, masque). Surveillez vos symptômes, l'évolution de votre température corporelle et recherchez un avis médical.</p>
+        </div>
+    </div>
+    <div class="container" style="margin:100px 0px">
+        <marquee behavior="alternate" scrollamount="2" direction="" class="pt-3 pb-4">
+            <img src="images/Bonjour-FALC.jpg" width="150" alt="" class="img-fluid shadow-md opacity mr-3">
+            <img src="images/Lavage-mains-FALC.jpg" width="150" alt="" class="img-fluid shadow-md opacity mr-3">
+            <img src="images/Corona-viurs-FALC.jpg" width="150" alt="" class="img-fluid shadow-md opacity mr-3">
+            <img src="images/Bonjour-FALC.jpg" width="150" alt="" class="img-fluid shadow-md opacity mr-3">
+            <img src="images/Lavage-mains-FALC.jpg" width="150" alt="" class="img-fluid shadow-md opacity mr-3">
+            <img src="images/Corona-viurs-FALC.jpg" width="150" alt="" class="img-fluid shadow-md opacity mr-3">
+        </marquee>
+    </div>
+    <div class="fixed-action-btn">
+        <a data-toggle="modal" data-target="#modalRelatedContent" title="Chat" class="btn-floating shadow-bot bg-primary-gradient shadow btn-lg btn-large">
+          <i class="icon-chat text-white"></i>
+        </a>
+    </div>
+    <div class="modal modal fade bottom" id="modalRelatedContent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-side modal-bottom-right modal-frame" role="document">
+            <div class="modal-content">
+                <div class="pt-3 pb-3 rounded-top bg-primary-gradient" style="z-index:0; position: abolute;">
+                    <div class="row m-flex-center pr-3 pl-3">
+                        <a href="">
+                            <img src="images/icon.png" width="40" alt="" class="img-fluid ml-2">
+                        </a>
+                        <h4 class="text-white font-weight-normal ml-2">Chat19</h4>
+                        <div class="col-auto ml-auto text-white">
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <svg style="margin-top:-7px; position: relative;"  width="100%" height="100%" viewBox="0 0 1920 355" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#f0f2f7">
+                            <path
+                            d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,757 L1017.15166,757 L0,757 L0,439.134243 Z"
+                            id="Path"></path>
+                        </g>
+                    </g>
+                </svg>
+                </div>
+                <div class="rounded-2bottom" style="margin-top:-50px; z-index:5;">
+                    <div class="pl-2 pr-2 chat-section scrollbar-black scroller" id="post">
+                        
+                    </div>
+                    <form id="submit" class="row m-flex-center mr-1 ml-1 input-msg">
+                        <input type="text" id="message" class="chat-form col-9" placeholder="taper un message...">
+                        <button type="submit" class="btn-light shadow btn-floating send"><i class="icon-send2 text-danger"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="container-fluid bg-dark">
+        <div class="container pt-5 pb-5">
+            <div class="col-lg-10 m-auto">
+                <div class="container p-lg-5 p-md-5 p-3 shadow-lg rounded bg-white" style="margin-top:-100px;">
+                    <div class="text-center">
+                        <p>Ce site n'est pas un dispositif médical, il ne délivre pas d'avis médical. Si vous avez des doutes concernant votre état de santé, contactez un médecin !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center m-flex-center row">
+                <p class="text-white mt-2 mr-5">
+                    Made with <i class="icon-heart"></i> by <a href="" class="text-white">Méschac IRUNG</a>
+                </p>
+                <a href="" title="contribuer"><i class="icon-github fa-2x mr-3"></i></a>
+                <a href="" title="twitter"><i class="icon-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
