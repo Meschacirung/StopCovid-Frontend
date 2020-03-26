@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test préliminaire</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery.convform.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="fontawesome/fonts/icomoon/style.css">
@@ -246,13 +247,58 @@
                 </svg>
                 </div>
                 <div class="rounded-2bottom" style="margin-top:-50px; z-index:5;">
-                    <div class="pl-2 pr-2 chat-section scrollbar-black scroller" id="post">
-                        
+                    <div id="chat" class="pl-2 pr-2 chat-section scrollbar-black scroller" style="overflow-y: scroll; height:200px;">
+                        <form action="" method="GET" class="hidden">
+                            <input type="text" name="name" data-conv-question="Quel est votre nom ?">
+                            <input type="text" data-conv-question="Bonjour {name}:0! c'est un plaisir." data-no-answer="true">
+                            <select data-conv-question="Je vais vous poser quelques questions en rapport avec les symptômes du coronavirus covid-19; Etes vous d'accord ?" name="first-question">
+                                <option value="Okay d'accord">Okay d'accord</option>
+                                <option value="Non merci">Non merci</option>
+                            </select>
+                            <input type="text" name="name" data-conv-question="C'est parti" data-no-answer="true">
+                            <select data-conv-question="Pensez-vous avoir ou avoir eu la fièvre ces derniers jours (frissons, sueurs) ?" name="first-question">
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                            </select>
+                            <select data-conv-question="Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?" name="first-question">
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                            </select>
+                            <select data-conv-question="Forte diminution ou perte de votre goût ou de votre odorat ?" name="first-question">
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                            </select>
+                            <select data-conv-question="Avez-vous des maux de tête ?" name="first-question">
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                            </select>
+                            <input type="text" data-conv-question="Nous avons presque finis :(" data-no-answer="true">
+                            <select data-conv-question="Avez-vous du mal à respirer ?" name="first-question">
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                            </select>
+                            <select data-conv-question="Ces derniers jours, avez vous eu de maux de gorge ?" name="first-question">
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                            </select>
+                            <select data-conv-question="Etes vous entré en contact avec des personnes provenant dans des zones à risque ou présentant des symptômes du coronavirus ces derniers jours ?" name="first-question">
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                            </select>
+                            <input type="text" data-conv-question="Nous avons finis !" data-no-answer="true">
+                            <input type="text" data-conv-question="Dans quelques sécondes, je vais vous dire ce que je pense de votré état de santé." data-no-answer="true">
+                            <input type="text" data-conv-question="Mais avant, vous devez savoir que je ne suis pas un médecin, si vous avez des doutes concernant votre santé, vieillez consulter un médecin, c'est trés important." data-no-answer="true">
+                            <input type="text" data-conv-question="{name}:0 vos symptômes nécessitent que vous continuiez à vous suivre." data-no-answer="true">
+                            <input type="text" data-conv-question="{name}:0 vous ne présentez pas de symptômes du coronavirus." data-no-answer="true">
+                            <input type="text" data-conv-question="{name}:0 vos symptômes nécessitent que vous consultiez un médecin." data-no-answer="true">
+                            <input type="text" data-conv-question="Surveillez attentivement votre état de santé. N'ésitez pas à contacter votre médecin en cas de doute." data-no-answer="true">
+                            <input type="text" data-conv-question="Mesurez votre température deux fois par jour. Refaites ce test en cas de nouveau symptôme pour réévaluer votre situation." data-no-answer="true">
+                            <input type="text" data-conv-question="Restez chez vous en attendant que les symptômes disparaissent, mais restez attentif à toute aggravation." >
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                            </select>
+                        </form>
                     </div>
-                    <form id="submit" class="row m-flex-center mr-1 ml-1 input-msg">
-                        <input type="text" id="message" class="chat-form col-9" placeholder="taper un message...">
-                        <button type="submit" class="btn-light shadow btn-floating send"><i class="icon-send2 text-danger"></i></button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -281,5 +327,13 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/autosize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.convform.js"></script>
+    <script>
+		jQuery(function($){
+			convForm = $('#chat').convform({selectInputStyle: 'disable'});
+			console.log(convForm);
+		});
+	</script>
 </body>
 </html>
