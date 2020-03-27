@@ -221,9 +221,9 @@
     </div>
     <div class="modal modal fade bottom" id="modalRelatedContent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true" data-backdrop="false">
-        <div class="modal-dialog modal-side modal-bottom-right modal-frame" role="document">
+        <div class="modal-dialog modal-side modal-bottom-right" role="document">
             <div class="modal-content">
-                <div class="pt-3 pb-3 rounded-top bg-primary-gradient" style="z-index:0; position: abolute;">
+                <div class="pt-3 pb-3 bg-primary-gradient head" style="z-index:0; position: abolute;">
                     <div class="row m-flex-center pr-3 pl-3">
                         <a href="">
                             <img src="images/icon.png" width="40" alt="" class="img-fluid ml-2">
@@ -246,8 +246,8 @@
                     </g>
                 </svg>
                 </div>
-                <div class="rounded-2bottom" style="margin-top:-50px; z-index:5;">
-                    <div id="chat" class="pl-2 pr-2 chat-section scrollbar-black scroller" style="overflow-y: scroll; height:200px;">
+                <div class="" style="margin-top:-50px; z-index:5;">
+                    <div id="chat" class="p-2 chat-section scrollbar-black scroller">
                         <form action="" method="GET" class="hidden">
                             <input type="text" name="name" data-conv-question="Quel est votre nom ?">
                             <input type="text" data-conv-question="Bonjour {name}:0! c'est un plaisir." data-no-answer="true">
@@ -299,11 +299,14 @@
                             </select>
                         </form>
                     </div>
+                    <form id="submit" class="row m-flex-center mr-1 ml-1 input-msg d-none">
+                        <input type="text" id="message" class="chat-form col-9" placeholder="taper un message...">
+                        <button type="submit" class="btn-light shadow btn-floating send"><i class="icon-send2 text-danger"></i></button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
     <div id="footer" class="container-fluid bg-dark">
         <div class="container pt-5 pb-5">
             <div class="col-lg-10 m-auto">
