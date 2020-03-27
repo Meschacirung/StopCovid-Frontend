@@ -267,8 +267,7 @@ box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.027) !important;
     padding:10px;
   }
   svg{
-    margin:0 -10px;
-    margin-top:0px;
+    display:none;
   }
   .modal-open {
     overflow:hidden;
