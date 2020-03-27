@@ -259,15 +259,15 @@ ConvState.prototype.answerWith = function(answerText, answerObject) {
         $(this).addClass('conv-form-wrapper');
 
         var parameters = $.extend(true, {}, {
-            placeHolder : 'Type Here',
+            placeHolder : 'Entrer un message',
             typeInputUi : 'input',
             timeOutFirstQuestion : 1200,
-            buttonClassStyle : 'icon2-arrow',
+            buttonClassStyle : 'icon-send2',
             selectInputStyle: 'show',
-            selectInputDisabledText: 'Select an option',
+            selectInputDisabledText: 'Choisissez une option',
             eventList : {
                 onSubmitForm : function(convState) {
-                    console.log('completed');
+                    console.log('Completé');
                     convState.form.submit();
                     return true;
                 },
@@ -286,7 +286,7 @@ ConvState.prototype.answerWith = function(answerText, answerObject) {
             formIdName : 'convForm',
             inputIdName : 'userInput',
             loadSpinnerVisible : '',
-            buttonText: '▶'
+            buttonText: '~'
         }, options);
 
         /*
