@@ -5770,7 +5770,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 350px;
+    max-width:100%;
     margin: 1.75rem auto;
   }
   .modal-dialog-centered {
@@ -6350,14 +6350,17 @@ a.close.disabled {
 
 .spinner-grow {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 6rem;
+  height: 6rem;
   vertical-align: text-bottom;
-  background-color: currentColor;
+  background-color: #ffffff;
   border-radius: 50%;
   opacity: 0;
   -webkit-animation: spinner-grow .75s linear infinite;
   animation: spinner-grow .75s linear infinite;
+  position:absolute;
+  right:-5px;
+  bottom:-5px;
 }
 
 .spinner-grow-sm {
