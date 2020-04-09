@@ -81,15 +81,16 @@
 }
 
 form.convFormDynamic {
-    
+    border-top:1px solid rgb(240, 240, 240);
     padding: 10px !important;
     position: fixed;
-    bottom: 0;
+    bottom:20px;
     background:#fff;
     width:350px;
     margin-left:-8px;
+    border-bottom-left-radius:1.5rem;
 }
-
+        
 form.convFormDynamic textarea.userInputDynamic {
     border: none;
     position:fixed;
@@ -111,7 +112,8 @@ form.convFormDynamic input.userInputDynamic {
     position:relative;
     bottom:0;
     border: none;
-    padding: 7px 0px;
+    border-radius: 2rem;
+    padding: 10px 10px;
     outline: none;
     font-size: 1rem;
     float: left;
@@ -122,6 +124,7 @@ form.convFormDynamic input.userInputDynamic {
     display: block;
     max-width: 100%;
     margin-right: 2.5%;
+    background: #f8f8f8;
 }
 div.conv-form-wrapper:after {
     content: '';
@@ -131,7 +134,7 @@ div.conv-form-wrapper:after {
     height: 1px;
 }
 div.conv-form-wrapper div#messages {
-    height: 100% !important;
+    height: 150% !important;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none; /* IE 11 */
@@ -149,10 +152,11 @@ div.conv-form-wrapper {
 }
 div.conv-form-wrapper div.wrapper-messages {
     position: relative;
-    height:720px;
-    max-height:71vh;
+    height:620px;
+    max-height:45vh;
     overflow-y: scroll;
     transition: margin 0.2s;
+    margin-bottom:50px;
 }
 div.conv-form-wrapper:before {
     content: '';
@@ -259,11 +263,11 @@ div.conv-form-wrapper  div#messages div.message.to {
     color: #474747;
     float: left;
     border-top-left-radius: 0;
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #f9fbfd !important;
 }
 div.conv-form-wrapper div#messages div.message.from {
-    background: #06b79a;
-    color: #fff;
+    background: #dae3fd;
+    color: rgb(65, 65, 65);
     border-top-right-radius: 0;
 }
 .message.to+.message.from, .message.from+.message.to {
@@ -299,8 +303,8 @@ div.conv-form-wrapper div.options div.option.selected:hover {
 
 form.convFormDynamic button.submit {
     position: fixed;
-    right:15px;
-    bottom:11px;
+    right:25px;
+    bottom:25px;
     padding: 3px;
     border: none;
     float: left;
@@ -311,12 +315,12 @@ form.convFormDynamic button.submit {
     font-size: 2rem;
     font-weight:bold;
     align-items: center;
-    width:70px;
-    height: 70px;
+    width:55px;
+    height: 55px;
     margin-top: 4px;
     background: #ffffff;
     outline: none !important;
-    box-shadow: 0 0 20px 20px rgba(179, 179, 179, 0.185);
+    box-shadow: 0 0 20px 5px rgba(179, 179, 179, 0.185);
 }
 form.convFormDynamic button.submit:hover {
     background:#3752aa;
